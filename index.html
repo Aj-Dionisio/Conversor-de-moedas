@@ -1,44 +1,50 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta author="Aj_Dionisio">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta author="Aj_Dionisio" />
     <title>Conversor de moedas</title>
-</head>
-<body>
+  </head>
+  <body>
     <main id="card">
-        <p class="text">
-            Converter de:
-        </p>
+      <section id="original">
+        <p class="text">Converter de:</p>
         <select name="moedas" id="moedas-converter">
-            <option value="dolar">Dólar</option>
-            <option value="euro">Euro</option>
-            <option value="real">Real</option>
-            <option value="libra">Libra</option>
-            <option value="iene">Iene</option>
-            <option value="peso argentino">Peso Argentino</option>
+          <option value="dolar">Dólar</option>
+          <option value="euro">Euro</option>
+          <option value="real">Real</option>
+          <option value="libra">Libra</option>
+          <option value="iene">Iene</option>
+          <option value="peso argentino">Peso Argentino</option>
         </select>
-        <input type="number" id="valor-converter" placeholder="Valor a converter" />
+        <input
+          type="number"
+          id="valor-converter"
+          placeholder="Valor a converter"
+        />
+      </section>
 
+      <section id="convert">
         <p class="text">Para:</p>
         <select name="moedas" id="moedas-converter">
-            <option value="dolar">Dólar</option>
-            <option value="euro">Euro</option>
-            <option value="real">Real</option>
-            <option value="libra">Libra</option>
-            <option value="iene">Iene</option>
-            <option value="peso argentino">Peso Argentino</option>
+          <option value="dolar">Dólar</option>
+          <option value="euro">Euro</option>
+          <option value="real">Real</option>
+          <option value="libra">Libra</option>
+          <option value="iene">Iene</option>
+          <option value="peso argentino">Peso Argentino</option>
         </select>
-        <input type="number" id="valor-convertido" placeholder="Valor convertido" />
+        <input
+          type="number"
+          id="valor-convertido"
+          placeholder="Valor convertido"
+        />
+      </section>
 
-        <p id="ressultado">
-            O valor convertido é:
-        </p>
+      <p id="ressultado">O valor convertido é:</p>
 
-        <button id="button-conversor">Converter</button>
-
-
+      <button id="button-conversor">Converter</button>
     </main>
-</body>
+  </body>
 </html>
