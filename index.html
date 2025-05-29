@@ -15,9 +15,10 @@
     <title>Conversor de moedas</title>
   </head>
   <body>
+    <img src="./Assets/logo.gif" alt="logo-devclub-convert-money">
     <main id="card">
-      <section id="OriginalValue">
-        <p class="text">Converter <em>de</em>:</p>
+       <label> <!--lembrar o que é label -->
+        Converter <b>de</b>:
         <select name="moedas" id="moedas-converter">
           <option value="dolar">Dólar</option>
           <option value="euro">Euro</option>
@@ -27,10 +28,10 @@
           <option value="Peso_Argentino">Peso Argentino</option>
         </select>
         <input type="number" id="valor-converter" placeholder="Valor a converter" />
-      </section>
+      </label>
 
-      <section id="ConvertValue">
-        <p class="text">Converter <em>para</em>:</p>
+      <label id="ConvertValue">
+        Converter <b>para</b>:
         <select name="moedas" id="moedas-converter">
           <option value="dolar">Dólar</option>
           <option value="euro">Euro</option>
@@ -40,12 +41,26 @@
           <option value="peso argentino">Peso Argentino</option>
         </select>
         
-      </section>
+      </label>
 
-      <p id="ressultado">O valor convertido é:</p>
-      <input type="number" id="valor-convertido" placeholder="Valor convertido" />
+      <label>
+        Valor:
+        <input type="number" id="valor-convertido" placeholder="10.000,00"/>
+      </label>
 
       <button id="button-conversor">Converter</button>
+
+      <section>
+        <div><img src="./Assets/Real.png" alt="logo-moeda-a-converter">
+          <p>Real</p>
+          <p>R$0,00</p>
+        </div>
+        <img src="./Assets/Arrow.png" alt="Seta-de-conversão">
+        <div><img src="./Assets/Dollar.png" alt="logo-moeda-convertida">
+          <p>Dólar</p>
+          <p>U$0,00</p>
+        </div>
+      </section>
     </main>
   </body>
 </html>
