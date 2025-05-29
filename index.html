@@ -15,7 +15,7 @@
     <title>Conversor de moedas</title>
   </head>
   <body>
-    <img src="./Assets/logo.gif" alt="logo-devclub-convert-money">
+    <img  id="gifLogo"src="./Assets/logo.gif" alt="logo-devclub-convert-money">
     <main id="card">
        <label> <!--lembrar o que é label -->
         Converter <b>de</b>:
@@ -51,14 +51,16 @@
       <button id="button-conversor">Converter</button>
 
       <section>
-        <div><img src="./Assets/Real.png" alt="logo-moeda-a-converter">
-          <p>Real</p>
-          <p>R$0,00</p>
+        <div class="currency-box">
+          <img src="./Assets/Real.png" alt="logo-moeda-a-converter">
+          <p class="currency">Real</p>
+          <p class="currency-value">R$0,00</p>
         </div>
-        <img src="./Assets/Arrow.png" alt="Seta-de-conversão">
-        <div><img src="./Assets/Dollar.png" alt="logo-moeda-convertida">
-          <p>Dólar</p>
-          <p>U$0,00</p>
+        <img class="arrow-img" src="./Assets/Arrow.png" alt="Seta-de-conversão">
+        <div class="currency-box">
+          <img src="./Assets/Dollar.png" alt="logo-moeda-convertida">
+          <p class="currency">Dólar</p>
+          <p class="currency-value">U$0,00</p>
         </div>
       </section>
     </main>
