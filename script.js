@@ -1,4 +1,5 @@
 const convertButton = document.getElementById('ButtonConvert');
+const currencyToConvert = document.querySelector('.currency-to-convert');// mapeia o elemento HTML onde a moeda a ser convertida será selecionada
 const currencySelect = document.querySelector('.currency-converted');// mapeia o elemento HTML onde a moeda convertida será selecionada
 
 function converterValores(){
@@ -7,7 +8,8 @@ function converterValores(){
 
     const CurrencyValueConverted = document.querySelector('.currency-value')// mapeia o elemento HTML onde o valor convertido será exibido
 
-    console.log(currencySelect.value)
+    console.log(currencyToConvert.value) // exibe no console o valor da moeda a ser convertida;
+    console.log(currencySelect.value)// exibe no console o valor da moeda convertida;
 
     //Exemplos de taxa de conversão
     const dolarToday = 5.25;
