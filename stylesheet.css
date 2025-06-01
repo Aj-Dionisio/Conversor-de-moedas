@@ -114,7 +114,7 @@ section{
     font-size: 1.143rem;
 }
 
-.currency-value{
+.currency-value .currency-value-to-convert{
     color: #555;
     font-weight: 700;
     font-size: 1.25rem;
