@@ -19,12 +19,13 @@
     <main id="card">
        <label> <!--lembrar o que é label -->
         Converter <b>de</b>:
-        <select name="moedas" id="moedas-converter">
-          <option value="dolar">Dólar</option>
-          <option value="euro">Euro</option>
-          <option value="real">Real</option>
-          <option value="libra">Libra</option>
-          <option value="iene">Iene</option>
+        <select name="moedas" id="moedas-converter"
+        class="currency-to-convert">
+          <option value="Dollar">Dólar</option>
+          <option value="Euro">Euro</option>
+          <option value="Real">Real</option>
+          <option value="Libra">Libra</option>
+          <option value="Iene">Iene</option>
           <option value="Peso_Argentino">Peso Argentino</option>
         </select>
         <input type="number" id="valor-converter" placeholder="Valor a converter" />
@@ -32,13 +33,13 @@
 
       <label id="ConvertValue">
         Converter <b>para</b>:
-        <select name="moedas" id="moedas-converter">
-          <option value="dolar">Dólar</option>
-          <option value="euro">Euro</option>
-          <option value="real">Real</option>
-          <option value="libra">Libra</option>
-          <option value="iene">Iene</option>
-          <option value="peso argentino">Peso Argentino</option>
+        <select name="moedas" id="moedas-converter" class="currency-converted">
+         <option value="Dollar">Dólar</option>
+          <option value="Euro">Euro</option>
+          <option value="Real">Real</option>
+          <option value="Libra">Libra</option>
+          <option value="Iene">Iene</option>
+          <option value="Peso_Argentino">Peso Argentino</option>
         </select>
         
       </label>
