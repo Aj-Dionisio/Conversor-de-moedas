@@ -1,7 +1,7 @@
 const convertButton = document.getElementById('ButtonConvert');
 
 function converterValores(){
-    const inputValue = document.getElementById('valor-converter').value
+        const inputValue = parseFloat(document.getElementById('valor-converter').value);// adição do parseFloat para garantir que o valor seja um número decimal
     const CurrencyValueToConvert = document.querySelector('.currency-value-to-convert')// mapeia o elemento HTML onde o valor a ser convertido será exibido 
 
     const CurrencyValueConverted = document.querySelector('.currency-value')// mapeia o elemento HTML onde o valor convertido será exibido
@@ -38,3 +38,5 @@ function converterValores(){
 }
 
 convertButton.addEventListener('click', converterValores);
+
+
