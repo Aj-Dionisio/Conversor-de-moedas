@@ -68,7 +68,7 @@ input{
     margin-bottom: 10px;
 }
 
-button{
+#ButtonConvert{
    border-radius: 5px;
    height: 48px;
    width: 100%;
