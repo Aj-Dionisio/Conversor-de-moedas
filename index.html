@@ -20,12 +20,12 @@
     <label> <!--lembrar o que é label -->
       Converter <b>de</b>:
       <select name="moedas" id="moedas-converter" class="currency-to-convert">
-        <option value="Dollar">Dólar</option>
-        <option value="Euro">Euro</option>
+        <!-- <option value="Dollar">Dólar</option>
+        <option value="Euro">Euro</option> -->
         <option value="Real">Real</option>
-        <option value="Libra">Libra</option>
+        <!-- <option value="Libra">Libra</option>
         <option value="Iene">Iene</option>
-        <option value="Peso_Argentino">Peso Argentino</option>
+        <option value="Peso_Argentino">Peso Argentino</option> -->
       </select>
       <input type="number" id="valor-converter" placeholder="Valor a converter" />
     </label>
@@ -35,10 +35,10 @@
       <select name="moedas" id="moedas-converter" class="currency-converted">
         <option value="Dollar">Dólar</option>
         <option value="Euro">Euro</option>
-        <option value="Real">Real</option>
+        <!-- <option value="Real">Real</option>
         <option value="Libra">Libra</option>
         <option value="Iene">Iene</option>
-        <option value="Peso_Argentino">Peso Argentino</option>
+        <option value="Peso_Argentino">Peso Argentino</option> -->
       </select>
 
     </label>
@@ -53,13 +53,13 @@
     <section>
       <div class="currency-box">
         <img src="./Assets/Real.png" alt="logo-moeda-a-converter">
-        <p class="currency">Real</p>
+        <p class="currency" id="currency-value-to-convert">Real</p>
         <p class="currency-value-to-convert">R$0,00</p>
       </div>
       <img class="arrow-img" src="./Assets/Arrow.png" alt="Seta-de-conversão">
       <div class="currency-box">
-        <img src="./Assets/Dollar.png" alt="logo-moeda-convertida">
-        <p class="currency">Dólar</p>
+        <img id="currency-flag" src="./Assets/Dollar.png" alt="logo-moeda-convertida">
+        <p class="currency" id="currency-name">Dólar</p>
         <p class="currency-value">U$0,00</p>
       </div>
     </section>
