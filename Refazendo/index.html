@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Moedas</title>
+    <link rel="stylesheet" href="./stylesheet.css">
+</head>
+
+<body>
+    <main class="container">
+        <img src="./Assets/Dinherio explodindo.webp" alt="money-explosion">
+        <section class="currencyToConvert">
+            <p>Converter <b>de</b></p>
+            <select name="currencyConvert" id="currency">
+                <option value="real">R$ Real Brasileiro</option>
+                <option value="dollar">US$ Dolar Americano</option>
+                <option value="euro">R$ Euro</option>
+            </select>
+
+        </section>
+
+        <section class="convertedCurrency">
+            <p>Converter <b>para</b></p>
+            <select name="currencyConverted" id="currency">
+                <option value="real">R$ Real Brasileiro</option>
+                <option value="dollar">US$ Dolar Americano</option>
+                <option value="euro">R$ Euro</option>
+            </select>
+        </section>
+
+        <input class="currencyValue" type="number" placeholder="Digite aqui">
+
+        <button class="converted_button">Converter</button>
+
+        <section class="infConverted">
+            <div id="valueConvert">
+            <img src="" alt="flagConvert">
+            <p class="nCurrencyConvert">Real</p>
+            <p class="valueCurrencyConvert">Ser igual ao valor inserido</p>
+            </div>
+            <img src="" alt="arrow">
+            <div id="valeuConverted">
+                <img src="" alt="flagConverted">
+                <p class="nCurrencyConverted">Dolar Americano</p>
+                <p class="valueConverted">Resultado da conta de converção</p>
+            </div>
+
+        </section>
+    </main>
+</body>
+
+<script src="./script.js"></script>
+
+</html>
