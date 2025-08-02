@@ -11,7 +11,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 15vh;
+    width: 100vw;
+    height: 100vh;
 }
 
 .container {
@@ -20,9 +21,13 @@ body {
 }
 
 #imgLogo {
-    width: 15rem;
+    width: 20rem;
     height: 13rem;
     margin-bottom: .7rem;
+}
+
+.currencyToConvert {
+    margin-bottom: 1rem;
 }
 
 p {
@@ -40,6 +45,10 @@ input {
     color: black;
 }
 
+input {
+    margin-top: 1rem;
+}
+
 .converted_button {
     height: 2rem;
     color: #fff;
@@ -54,4 +63,30 @@ input {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+#flagConvert,
+#flagConverted,
+.imgArrow {
+    width: 5rem;
+}
+
+#valueConvert{
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+}
+
+#imgArrow {
+    margin: .5rem;
+}
+
+#valeuConverted{
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
 }
