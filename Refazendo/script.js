@@ -1,4 +1,4 @@
-const input = document.querySelector('.currencyValue')
+'const input = document.querySelector('.currencyValue')
 const paragraph = document.querySelector('.valueCurrencyConvert')
 const valueConverted = document.querySelector('.valueConverted')
 const image = document.querySelector('#flagConvert')
@@ -34,12 +34,12 @@ function conta() {
 }
 
 function changeCurrencyConvert() {
-    if () {
+    if (currencyConvert.value == 'euro') {
         image.innerHTML = image.src = "./Assets/Euro.png"
-    } else if () {
-        image.innerHTML = image.src = "./Assets/Euro.png"
+    } else if (currency convert.value == 'dollar' ) {
+        image.innerHTML = image.src = "./Assets/Dollar.png"
     } else {
-        image.innerHTML = image.src = "./Assets/Euro.png"
+        image.innerHTML = image.src = "./Assets/Real.png"
     }
 
 }
