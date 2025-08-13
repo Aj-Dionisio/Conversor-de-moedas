@@ -13,7 +13,7 @@
         <img id="imgLogo" src="./Assets/Dinherio explodindo.webp" alt="money-explosion">
         <section class="currencyToConvert">
             <p>Converter <b>de</b></p>
-            <select name="currencyConvert" id="currencyConvert">
+            <select onchange="changeCurrencyConvert()" name="currencyConvert" id="currencyConvert">
                 <option value="real">R$ Real Brasileiro</option>
                 <option value="dollar">US$ Dolar Americano</option>
                 <option value="euro">R$ Euro</option>
@@ -21,7 +21,8 @@
 
         </section>
 
-        <section class="convertedCurrency">
+        <section
+        onchange="changeConvertedCurrency()" class="convertedCurrency">
             <p>Converter <b>para</b></p>
             <select name="currencyConverted" id="currencyConverted">
                 <option value="real">R$ Real Brasileiro</option>
@@ -32,19 +33,19 @@
 
         <input class="currencyValue" type="number" placeholder="Digite aqui">
 
-        <button onclick="conta" class="converted_button">Converter</button>
+        <button onclick="conta()" class="converted_button">Converter</button>
 
         <section class="infConverted">
             <div id="valueConvert">
                 <img id="flagConvert" src="./Assets/Real.png" alt="flagConvert">
                 <p class="nCurrencyConvert">Real</p>
-                <p class="valueCurrencyConvert">Ser igual ao valor inserido</p>
+                <p class="valueCurrencyConvert">R$0,00</p>
             </div>
             <img id="imgArrow" src="./Assets/Arrow.png" alt="arrow">
             <div id="valeuConverted">
                 <img id="flagConverted" src="./Assets/Dollar.png" alt="flagConverted">
                 <p class="nCurrencyConverted">Dolar Americano</p>
-                <p class="valueConverted">Resultado da conta de converção</p>
+                <p class="valueConverted">US$0.00</p>
             </div>
 
         </section>
