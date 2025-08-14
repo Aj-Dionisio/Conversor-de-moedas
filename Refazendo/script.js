@@ -1,4 +1,4 @@
-'const input = document.querySelector('.currencyValue')
+const input = document.querySelector(".currencyValue")
 const paragraph = document.querySelector('.valueCurrencyConvert')
 const valueConverted = document.querySelector('.valueConverted')
 const image = document.querySelector('#flagConvert')
@@ -11,7 +11,7 @@ const CURRENCY_VALUE = {
     EURO: 6.33,
 }
 
-const euroConta = input.value / CURRENCY_VALUE.EURO
+
 
 
 function conta() {
@@ -22,21 +22,28 @@ function conta() {
 
     const dollarConta = input.value / CURRENCY_VALUE.DOLLAR
 
-    if (currencySelectConvert.value == 'dollar') {
+    const euroConta = input.value / CURRENCY_VALUE.EURO
+
+    if (currencySelectConverted.value == 'dollar') {
         valueConverted.innerHTML = new Intl.NumberFormat("en-US", {
             style: "currency",
             currency: "USD"
         }).format(dollarConta)
 
+    }else if(currencySelectConverted.value == 'euro'){
+        valueConverted.innerHTML = new Intl.NumberFormat("de-DE", {
+            style: "currency",
+            currency: "EUR"
+        }).format(euroConta)
     }
 
 
 }
 
 function changeCurrencyConvert() {
-    if (currencyConvert.value == 'euro') {
+    if (currencySelectConvert.value == 'euro') {
         image.innerHTML = image.src = "./Assets/Euro.png"
-    } else if (currency convert.value == 'dollar' ) {
+    } else if (currencySelectConvert.value == 'dollar' ) {
         image.innerHTML = image.src = "./Assets/Dollar.png"
     } else {
         image.innerHTML = image.src = "./Assets/Real.png"
@@ -45,9 +52,9 @@ function changeCurrencyConvert() {
 }
 
 function changeConvertedCurrency() {
-    if (currencySelectConvert.value === 'dollar') {
-        image.innerHTML = imageConverted.src = "./Assets/Real.png"
-    } else if (currencySelectConvert.value === 'euro') {
+    if (currencySelectConverted.value === 'dollar') {
+        image.innerHTML = imageConverted.src = "./Assets/Dollar.png"
+    } else if (currencySelectConverted.value === 'euro') {
         image.innerHTML = imageConverted.src = "./Assets/Euro.png"
 
     } else {
