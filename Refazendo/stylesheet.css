@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: grey;
+    font-size: 16px;
+}
+
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+#imgLogo {
+    width: 20rem;
+    height: 13rem;
+    margin-bottom: .7rem;
+}
+
+.currencyToConvert {
+    margin-bottom: 1rem;
+}
+
+p {
+    margin-bottom: 0.1rem;
+}
+
+#currencyConverted {
+    margin-bottom: .5rem;
+}
+
+select,
+input {
+    height: 2rem;
+    width: 20rem;
+    color: black;
+}
+
+input {
+    margin-top: 1rem;
+}
+
+.converted_button {
+    height: 2rem;
+    color: #fff;
+    background-color: rgba(119, 47, 211, 1);
+    margin: .8rem 0;
+    border: 1px solid rgba(119, 47, 211, 1);
+    border-radius: .25rem;
+}
+
+.infConverted {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#flagConvert,
+#flagConverted,
+.imgArrow {
+    width: 5rem;
+}
+
+#valueConvert{
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+}
+
+#imgArrow {
+    margin: .5rem;
+}
+
+#valeuConverted{
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+}
