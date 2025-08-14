@@ -30,7 +30,7 @@ function conta() {
             currency: "USD"
         }).format(dollarConta)
 
-    }else if(currencySelectConverted.value == 'euro'){
+    } else if (currencySelectConverted.value == 'euro') {
         valueConverted.innerHTML = new Intl.NumberFormat("de-DE", {
             style: "currency",
             currency: "EUR"
@@ -43,7 +43,7 @@ function conta() {
 function changeCurrencyConvert() {
     if (currencySelectConvert.value == 'euro') {
         image.innerHTML = image.src = "./Assets/Euro.png"
-    } else if (currencySelectConvert.value == 'dollar' ) {
+    } else if (currencySelectConvert.value == 'dollar') {
         image.innerHTML = image.src = "./Assets/Dollar.png"
     } else {
         image.innerHTML = image.src = "./Assets/Real.png"
