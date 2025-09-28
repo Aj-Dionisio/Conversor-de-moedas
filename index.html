@@ -13,7 +13,7 @@
         <img id="imgLogo" src="./Assets/Dinherio explodindo.webp" alt="money-explosion">
         <section class="currencyToConvert">
             <p>Converter <b>de</b></p>
-            <select onchange="changeCurrencyConvert()" name="currencyConvert" id="currencyConvert">
+            <select  name="currencyConvert" id="currencyConvert">
                 <option value="real">R$ Real Brasileiro</option>
                 <option value="dollar">US$ Dolar Americano</option>
                 <option value="euro">R$ Euro</option>
@@ -22,7 +22,7 @@
         </section>
 
         <section
-        onchange="changeConvertedCurrency()" class="convertedCurrency">
+         class="convertedCurrency">
             <p>Converter <b>para</b></p>
             <select name="currencyConverted" id="currencyConverted">
                 <option value="real">R$ Real Brasileiro</option>
@@ -33,7 +33,7 @@
 
         <input class="currencyValue" type="number" placeholder="Digite aqui">
 
-        <button onclick="conta()" class="converted_button">Converter</button>
+        <button  class="converted_button">Converter</button>
 
         <section class="infConverted">
             <div id="valueConvert">
